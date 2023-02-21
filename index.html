@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="userInput">
+        <div class="storage">
+            <p class="storageText">Storage: <span id="storageValue">0</span> GB</p>
+            <input type="range" id="storage" value="0" min="0" max="1000" step="1">
+        </div>
+        <div class="transfer">
+            <p class="transferText">Transfer: <span id="transferValue">0</span> GB</p>
+            <input type="range" id="transfer" value="0" min="0" max="1000" step="1">
+        </div>
+    </div>
+    <div class="infoOutput">
+        <div class="infoOutputContainer">
+            <div class="titleImg">
+                <div>backblaze</div>
+                <div><img src="img/logo-backblaze-flame-header.webp"></div>
+
+            </div>
+            <div class="histogram">
+                <div class="histogramItem">
+                    <div class="itemValue" company="backblaze" style="height: 20px"></div>
+                    <div class="result" id="backblazeResult">0$</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="infoOutputContainer">
+            <div class="titleImg">
+                <div>bunny.net</div>
+                <div><img src="img/Unknown.svg"></div>
+                <div>
+                    <span>ssd</span>
+                    <label class="switch">
+                        <input type="checkbox" id="type">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>hdd</span>
+                </div>
+
+            </div>
+            <div class="histogram">
+                <div class="histogramItem">
+                    <div class="itemValue" company="bunny" style="height: 20px"></div>
+                    <div class="result" id="bunnyResult">0$</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="infoOutputContainer">
+            <div class="titleImg">
+                <div>scaleway.com</div>
+                <div><img src="img/scalewaycom.png"></div>
+                <div>
+                    <span>multi</span>
+                    <label class="switch">
+                        <input type="checkbox" id="plan">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>single</span>
+                </div>
+
+            </div>
+            <div class="histogram">
+                <div class="histogramItem">
+                    <div class="itemValue" company="scaleway" style="height: 20px; background-color: gray"></div>
+                    <div class="result" id="scalewayResult">0$</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="infoOutputContainer">
+            <div class="titleImg">
+                <div>vultr.com</div>
+                <div><img src="img/vuktr.png"></div>
+            </div>
+            <div class="histogram">
+                <div class="histogramItem">
+                    <div class="itemValue" company="vultr" style="height: 20px"></div>
+                    <div class="result" id="vultrResult">0$</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<script src="index.js"></script>
+</body>
+
+</html>
